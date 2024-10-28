@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de ED-KC</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="page-title">Conversor de ED-KC</h1>
+    
+    <div class="tabs">
+        <button class="tab-button yellow-button" onclick="showConverter('ed-to-kc')">ED para KC</button>
+        <button class="tab-button blue-button" onclick="showConverter('kc-to-ed')">KC para ED</button>
+    </div>
+    
+    <div id="ed-to-kc" class="converter hidden">
+        <h2>Conversão de ED para KC</h2>
+        <label for="ed-value">Digite o valor em ED:</label><br>
+        <input type="number" id="ed-value" required><br><br>
+        <label for="tara-value-ed">Digite o valor da tara (valor equivalente a 100KC em ED):</label><br>
+        <input type="number" id="tara-value-ed" required><br><br>
+        <button class="button yellow-button" onclick="convertEDtoKC()">Converter</button>
+        <p id="ed-to-kc-result"></p>
+    </div>
+    
+    <div id="kc-to-ed" class="converter hidden">
+        <h2>Conversão de KC para ED</h2>
+        <label for="kc-value">Digite o valor em KC:</label><br>
+        <input type="number" id="kc-value" required><br><br>
+        <label for="tara-value-kc">Digite o valor da tara (valor equivalente a 100KC em ED):</label><br>
+        <input type="number" id="tara-value-kc" required><br><br>
+        <button class="button blue-button" onclick="convertKCtoED()">Converter</button>
+        <p id="kc-to-ed-result"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* Estilos para os botões "ED para KC" e "KC para ED" */
+.yellow-button {
+    background-color: #ffd700;
+    color: black;
+    border-radius: 20px; /* Deixa os botões mais arredondados */
+    padding: 12px 20px; /* Ajusta o preenchimento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+.blue-button {
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 20px; /* Deixa os botões mais arredondados */
+    padding: 12px 20px; /* Ajusta o preenchimento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+/* Estilos para os inputs */
+input[type="number"] {
+    width: calc(100% - 44px); /* Ajusta a largura dos inputs */
+    padding: 12px; /* Ajusta o preenchimento interno */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Deixa os inputs mais arredondados */
+    font-size: 16px;
+}
+
+/* Estilos para a aba de conversão */
+.converter {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 300px;
+}
+
+/* Estilos para o restante da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.page-title {
+    margin-top: 20px;
+}
+
+.tabs {
+    margin-top: 40px;
+}
+
+.tab-button {
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
